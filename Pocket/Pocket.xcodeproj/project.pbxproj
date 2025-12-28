@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		/* App Files */
+		AAA00001 /* PocketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA00010; };
+		AAA00002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA00011; };
+		AAA00003 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA00012; };
+		AAA00004 /* DeepLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA00013; };
+
+		/* Models */
+		AAA00005 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA00020; };
+		AAA00006 /* Idea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA00021; };
+
+		/* Views - Home */
+		AAA00007 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA00030; };
+
+		/* Views - Boxes */
+		AAA00008 /* BoxDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA00040; };
+		AAA00009 /* NewBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA00041; };
+		AAA0000A /* EditBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA00042; };
+
+		/* Views - Capture */
+		AAA0000B /* QuickCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA00050; };
+
+		/* Views - Onboarding */
+		AAA0000C /* OnboardingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA00060; };
+		AAA0000D /* OnboardingSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA00061; };
+
+		/* Services */
+		AAA0000E /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA00070; };
+		AAA0000F /* ClassificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA00071; };
+
+		/* Extensions */
+		AAA00100 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA00080; };
+
+		/* Widget */
+		BBB00001 /* PocketWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB00010; };
+		BBB00002 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB00020; };
+		BBB00003 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB00021; };
+		BBB00004 /* PocketWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BBB00030; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BBB00040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCC00001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBB00050;
+			remoteInfo = PocketWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BBB00060 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BBB00004 /* PocketWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		/* App Files */
+		AAA00010 /* PocketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketApp.swift; sourceTree = "<group>"; };
+		AAA00011 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AAA00012 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		AAA00013 /* DeepLinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkHandler.swift; sourceTree = "<group>"; };
+
+		/* Models */
+		AAA00020 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		AAA00021 /* Idea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idea.swift; sourceTree = "<group>"; };
+
+		/* Views - Home */
+		AAA00030 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+
+		/* Views - Boxes */
+		AAA00040 /* BoxDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxDetailView.swift; sourceTree = "<group>"; };
+		AAA00041 /* NewBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBoxView.swift; sourceTree = "<group>"; };
+		AAA00042 /* EditBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBoxView.swift; sourceTree = "<group>"; };
+
+		/* Views - Capture */
+		AAA00050 /* QuickCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCaptureView.swift; sourceTree = "<group>"; };
+
+		/* Views - Onboarding */
+		AAA00060 /* OnboardingContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerView.swift; sourceTree = "<group>"; };
+		AAA00061 /* OnboardingSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSteps.swift; sourceTree = "<group>"; };
+
+		/* Services */
+		AAA00070 /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		AAA00071 /* ClassificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationService.swift; sourceTree = "<group>"; };
+
+		/* Extensions */
+		AAA00080 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+
+		/* Info */
+		AAA00090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
+		/* Widget */
+		BBB00010 /* PocketWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketWidget.swift; sourceTree = "<group>"; };
+		BBB00020 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BBB00021 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		BBB00030 /* PocketWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PocketWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+
+		/* Products */
+		DDD00001 /* Pocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDD00010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBB00070 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBB00002 /* WidgetKit.framework in Frameworks */,
+				BBB00003 /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCC00000 = {
+			isa = PBXGroup;
+			children = (
+				EEE00001 /* Pocket */,
+				EEE00002 /* PocketWidget */,
+				EEE00003 /* Products */,
+				EEE00004 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EEE00001 /* Pocket */ = {
+			isa = PBXGroup;
+			children = (
+				EEE00010 /* App */,
+				EEE00011 /* Models */,
+				EEE00012 /* Views */,
+				EEE00016 /* Services */,
+				EEE00017 /* Extensions */,
+				EEE00018 /* Resources */,
+				AAA00090 /* Info.plist */,
+			);
+			path = Pocket;
+			sourceTree = "<group>";
+		};
+		EEE00002 /* PocketWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BBB00010 /* PocketWidget.swift */,
+			);
+			path = PocketWidget;
+			sourceTree = "<group>";
+		};
+		EEE00003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDD00001 /* Pocket.app */,
+				BBB00030 /* PocketWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEE00004 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBB00020 /* WidgetKit.framework */,
+				BBB00021 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEE00010 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AAA00010 /* PocketApp.swift */,
+				AAA00013 /* DeepLinkHandler.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EEE00011 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AAA00012 /* AppState.swift */,
+				AAA00020 /* Box.swift */,
+				AAA00021 /* Idea.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EEE00012 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAA00011 /* ContentView.swift */,
+				EEE00013 /* Home */,
+				EEE00014 /* Boxes */,
+				EEE00015 /* Capture */,
+				EEE00019 /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EEE00013 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AAA00030 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EEE00014 /* Boxes */ = {
+			isa = PBXGroup;
+			children = (
+				AAA00040 /* BoxDetailView.swift */,
+				AAA00041 /* NewBoxView.swift */,
+				AAA00042 /* EditBoxView.swift */,
+			);
+			path = Boxes;
+			sourceTree = "<group>";
+		};
+		EEE00015 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				AAA00050 /* QuickCaptureView.swift */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		EEE00016 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AAA00070 /* SpeechRecognitionService.swift */,
+				AAA00071 /* ClassificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EEE00017 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AAA00080 /* Color+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EEE00018 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EEE00019 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				AAA00060 /* OnboardingContainerView.swift */,
+				AAA00061 /* OnboardingSteps.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDD00020 /* Pocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFF00001 /* Build configuration list for PBXNativeTarget "Pocket" */;
+			buildPhases = (
+				DDD00021 /* Sources */,
+				DDD00010 /* Frameworks */,
+				DDD00022 /* Resources */,
+				BBB00060 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBB00041 /* PBXTargetDependency */,
+			);
+			name = Pocket;
+			productName = Pocket;
+			productReference = DDD00001 /* Pocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BBB00050 /* PocketWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFF00002 /* Build configuration list for PBXNativeTarget "PocketWidgetExtension" */;
+			buildPhases = (
+				BBB00051 /* Sources */,
+				BBB00070 /* Frameworks */,
+				BBB00052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketWidgetExtension;
+			productName = PocketWidgetExtension;
+			productReference = BBB00030 /* PocketWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCC00001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DDD00020 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					BBB00050 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = FFF00000 /* Build configuration list for PBXProject "Pocket" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "pt-BR";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"pt-BR",
+				Base,
+			);
+			mainGroup = CCC00000;
+			productRefGroup = EEE00003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDD00020 /* Pocket */,
+				BBB00050 /* PocketWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDD00022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBB00052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDD00021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAA00001 /* PocketApp.swift in Sources */,
+				AAA00002 /* ContentView.swift in Sources */,
+				AAA00003 /* AppState.swift in Sources */,
+				AAA00004 /* DeepLinkHandler.swift in Sources */,
+				AAA00005 /* Box.swift in Sources */,
+				AAA00006 /* Idea.swift in Sources */,
+				AAA00007 /* HomeView.swift in Sources */,
+				AAA00008 /* BoxDetailView.swift in Sources */,
+				AAA00009 /* NewBoxView.swift in Sources */,
+				AAA0000A /* EditBoxView.swift in Sources */,
+				AAA0000B /* QuickCaptureView.swift in Sources */,
+				AAA0000C /* OnboardingContainerView.swift in Sources */,
+				AAA0000D /* OnboardingSteps.swift in Sources */,
+				AAA0000E /* SpeechRecognitionService.swift in Sources */,
+				AAA0000F /* ClassificationService.swift in Sources */,
+				AAA00100 /* Color+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBB00051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBB00001 /* PocketWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BBB00041 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBB00050 /* PocketWidgetExtension */;
+			targetProxy = BBB00040 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		GGG00001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		GGG00002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		GGG00003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pocket/Pocket.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pocket/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pocket;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocket.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		GGG00004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pocket/Pocket.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pocket/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pocket;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocket.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		GGG00005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PocketWidget/PocketWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PocketWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PocketWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocket.app.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		GGG00006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PocketWidget/PocketWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PocketWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PocketWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocket.app.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFF00000 /* Build configuration list for PBXProject "Pocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				GGG00001 /* Debug */,
+				GGG00002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFF00001 /* Build configuration list for PBXNativeTarget "Pocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				GGG00003 /* Debug */,
+				GGG00004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFF00002 /* Build configuration list for PBXNativeTarget "PocketWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				GGG00005 /* Debug */,
+				GGG00006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCC00001 /* Project object */;
+}
